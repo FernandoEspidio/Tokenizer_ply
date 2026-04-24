@@ -2,7 +2,6 @@
 Tokenizer con PLY - Little Duck.
 
 Fernando Espidio Santamaria 
-A00837570
 """
 
 import os
