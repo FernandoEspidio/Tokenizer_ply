@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+parser.out
+parsetab.py
+lextab.py
+outputs/
+.vscode/
+.DS_Store
+Thumbs.db

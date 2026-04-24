@@ -1,0 +1,33 @@
+program recovery_test;
+
+main {
+    a = 10 @ 20;
+    b_2 = a + 3 $ 4;
+    c = (a + b_2) * 2;
+    x = 12.5 & 3.4;
+    s = "hola" ^ "mundo";
+    print(a, b_2, c, x, s);
+
+    if (2a < 100) {
+        a = a + 1;
+        print("ok", a % 2);
+    } else {
+        b_2 = b_2 - 1;
+    };
+
+    do {
+        a = a ++ ;
+        c = c << 1;
+        x = x >> 1;
+        print(a ?¿ b_2 : c);
+        local_id = 7 ~ 8;
+    } whil (a <= 20);
+}
+end
+
+# comentario final con simbolos que no se aceptan dentro del comentario @ $ ^ ~ (no se leen)
+simbolos que no se aceptan fuera del comentario @ $ ^ ~ (no se leen)
+
+
+"""
+bloque de comentario incompleto

@@ -1,0 +1,21 @@
+program main var end 
+
+int float string void
+
+if else do while print
+
+var_so var_87  waaa id_7 
+4 &  5 6 7 
+
+, ;  :
+
+{ } [ ] ( )
+
+1   7879 125.848 2.56  "78" "5.16" "cadenita" "cade #"
+
+#1 2.56 "cadenita en comment" 7879 125.848 "78"
+
+18  !! %  24
+ +-*/= == 3>=3 5<=5 != < >
+
+

@@ -1,0 +1,54 @@
+program lexer_demo;
+
+# Prueba bloque de código
+
+"""
+var alpha, beta_2, gamma3 : int;
+var pi, rate_10 : float;
+var msg, msg_2 : string;
+"""
+
+void helper(a : int, b : float, text : string)
+[
+  var local_id, idx_9 : int;
+  {
+    local_id = a + 1;
+    idx_9 = local_id * 2 / 1 % 3;
+    pi = b + 3.14;
+    msg = "hola # no es comentario";
+
+    if (a >= 10 && a != 15)
+    {
+      print(local_id, idx_9, pi, msg);
+    }
+    else
+    {
+      print("else branch", text);
+    };
+
+    do {
+      alpha++;
+      beta_2--;
+      gamma3 = (alpha << 1) + (beta_2 >> 1);
+      alpha = alpha < gamma3 ? alpha : gamma3;
+      alpha = !alpha;
+    } while (alpha <= 100 || gamma3 > 0);
+  }
+]
+;
+
+main
+{
+  alpha = 25;
+  pi = 2.56;
+  msg_2 = "cadena de prueba 123";
+
+  helper(alpha, pi, msg_2);
+  print(alpha, pi, msg_2, "fin");
+}
+end
+
+# comentario simple con enteros 123, flotantes 4.5 y simbolos [] {} () ; :
+# otro comentario con palabras reservadas if else while do program main end
+
+@ $

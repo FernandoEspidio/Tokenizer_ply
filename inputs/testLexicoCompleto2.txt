@@ -1,0 +1,67 @@
+program demo_completo;
+var entero_1, otroID9 : int;
+var decimal_2 : float;
+var texto_3 : string;
+
+void helper(a : int, b : float, c : string)
+[
+    var idx_9 : int;
+    {
+        idx_9 = 0;
+        print(a, b, c);
+        print("cadena simple", "texto con # dentro", "123", "3.1416");
+
+        a = a + 1;
+        a = a - 1;
+        a = a * 2;
+        a = a / 2;
+        a = a % 2;
+
+        if (a == 1 && a != 2 || ! a) {
+            a = a << 1;
+            a = a >> 1;
+            a = a++;
+            a = a--;
+        }
+        else {
+            print(a ? b : c);
+        };
+    }
+]
+;
+
+main {
+    entero_1 = 123;
+    otroID9 = 0;
+    decimal_2 = 45.67;
+    texto_3 = "hola mundo 123";
+
+    print(entero_1, otroID9, decimal_2, texto_3);
+
+    if (entero_1 < 200) {
+        entero_1 = entero_1 + 5;
+    } else {
+        entero_1 = entero_1 - 5;
+    };
+
+    if (entero_1 <= 300) {
+        print("<= probado");
+    };
+
+    if (entero_1 >= 100) {
+        print(">= probado");
+    };
+
+    do {
+        otroID9 = otroID9 + 1;
+        print((entero_1), [otroID9], {entero_1});
+    } while (otroID9 > 0);
+}
+end
+
+# comentario de una linea con operadores += == != <= >= && || ++ -- << >> ? y delimitadores {} [] () , ; :
+
+"""
+ejemplo de bloque de comentarios
+"""
+
