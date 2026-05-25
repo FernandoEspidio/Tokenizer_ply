@@ -1,0 +1,66 @@
+program caso_completo_exitoso;
+
+var
+    A, B, C, D, E : int ;
+    X, Y, Z : float ;
+
+main {
+    A = 8;
+    B = 4;
+    C = 2;
+    D = 15;
+    E = 1;
+
+    X = 3.5;
+    Y = A / C;
+    Z = X + Y * 2.0;
+
+    if (A + B > D - C)
+    {
+        C = A * B - C;
+
+        if (C > D)
+        {
+            X = X + C / B;
+
+            if (X != Y)
+            {
+                E = E + 1;
+            }
+            else
+            {
+                E = E + 2;
+            };
+        }
+        else
+        {
+            B = B + C;
+
+            if (B < D)
+            {
+                Y = Y + X;
+            };
+        };
+    }
+    else
+    {
+        A = B + C * E;
+
+        if (A != D)
+        {
+            D = D - A;
+        }
+        else
+        {
+            D = A + B;
+        };
+    };
+
+    if (Z > X)
+    {
+        Z = Z / 2.0;
+    };
+
+    D = D + A * B - C;
+
+} end

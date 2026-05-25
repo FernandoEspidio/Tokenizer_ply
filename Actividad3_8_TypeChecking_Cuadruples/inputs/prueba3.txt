@@ -1,0 +1,26 @@
+program caso_errores_lexico_sintaxis_extenso;
+
+var
+    A, B : int ;
+    X : float ;
+
+main {
+    A = 7
+    B = 3;
+    X = 2.5;
+
+    if (A > B
+    {
+        A = A + 1;
+    };
+
+    if (X != 0.0)
+    {
+        B = B @ A;
+    }
+    else
+    {
+        A = A + 2;
+    };
+
+} end

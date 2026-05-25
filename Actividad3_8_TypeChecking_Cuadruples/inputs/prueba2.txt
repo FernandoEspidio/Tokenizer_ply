@@ -1,0 +1,39 @@
+program caso_errores_semanticos_extenso;
+
+var
+    A, B, C : int ;
+    A, X, Y : float ;
+
+main {
+    A = 10;
+    B = 2;
+    C = 4;
+    X = 1.5;
+    Y = 2.0;
+
+    F = A + B;
+
+    C = X + Y;
+
+    B = A / C;
+
+    if (A + B)
+    {
+        A = A + 1;
+    };
+
+    if (X)
+    {
+        Y = Y + 1.0;
+    };
+
+    if (A < C)
+    {
+        B = B + K;
+    }
+    else
+    {
+        C = C + 1;
+    };
+
+} end
