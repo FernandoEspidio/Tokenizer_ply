@@ -9,7 +9,7 @@ main {
     B = 3;
     X = 2.5;
 
-    if (A > B
+    if (A > B)
     {
         A = A + 1;
     };
