@@ -457,9 +457,10 @@ def p_factor_cte_int(p):
     "factor : CTE_INT"
     pilaOperandos.append((p[1], 'int'))
 
+# función para factor que es una constante de tipo string, se agrega a la pila de operandos.
 def p_factor_cte_str(p):
     "factor : CTE_STR"
-    pila_operandos.append((p[1], 'string'))
+    pilaOperandos.append((p[1], 'string'))
     
 # función para factor que es una constante float, se agrega a la pila de operandos con su tipo
 def p_factor_cte_float(p):
