@@ -62,6 +62,7 @@ def buildCubo():
     c[('int', 'int', '=')] = 'int'
     c[('float', 'float', '=')] = 'float'
     c[('float', 'int', '=')] = 'float'
+    c[('string', 'string', '=')] = 'string'
 
     # se regresa el cubo completo
     return c
@@ -237,7 +238,7 @@ reserved = {
 # lista de tokens, se incluyen los tokens de operadores y delimitadores necesarios para la gramatica y la generación de cuadruplos, 
 # se suma la lista de palabras reservadas para que el lexer las reconozca como tokens y no como IDs
 tokens = [
-    'ID', 'CTE_INT', 'CTE_FLOAT',
+    'ID', 'CTE_INT', 'CTE_FLOAT', 'CTE_STR',
     'ASSIGN', 'PLUS', 'MINUS', 'MULT', 'DIV',
     'GT', 'LT', 'GE', 'LE', 'NEQ', 'EQ',
     'LPAREN', 'RPAREN', 'LBRACE', 'RBRACE',
@@ -275,6 +276,11 @@ def t_CTE_FLOAT(t):
 def t_CTE_INT(t):
     r"[0-9]+\b"
     t.value = int(t.value)
+    return t
+
+# definición de token tipo string según la expresión regular
+def t_CTE_STR(t):
+    r'"[^"\n]*"'
     return t
 
 # definición de token tipo ID según la expresión regular, se verifica si el valor es una palabra reservada para asignarle el tipo correcto
@@ -451,6 +457,10 @@ def p_factor_cte_int(p):
     "factor : CTE_INT"
     pilaOperandos.append((p[1], 'int'))
 
+def p_factor_cte_str(p):
+    "factor : CTE_STR"
+    pila_operandos.append((p[1], 'string'))
+    
 # función para factor que es una constante float, se agrega a la pila de operandos con su tipo
 def p_factor_cte_float(p):
     "factor : CTE_FLOAT"
