@@ -412,7 +412,7 @@ def p_expresion_simple(p):
     "expresion : exp"
 
 # función para exp
-def p_exp(p):
+def p_expresion_comp(p):
     """expresion : exp GT exp 
                  | exp LT exp 
                  | exp GE exp 
