@@ -1,8 +1,9 @@
-program caso_errores_semanticos;
+program caso_errores_semanticos_extenso;
 
 var
     A, B, C : int ;
     A, X, Y : float ;
+    S : string ;
 
 main {
     A = 10;
@@ -10,12 +11,15 @@ main {
     C = 4;
     X = 1.5;
     Y = 2.0;
+    S = "hola";
 
     F = A + B;
 
     C = X + Y;
 
     B = A / C;
+
+    X = S + A;
 
     if (A + B)
     {
@@ -37,4 +41,3 @@ main {
     };
 
 } end
-
