@@ -1,4 +1,4 @@
-program caso_completo_exitoso;
+program caso_completo;
 
 var
     A, B, C, D, E : int ;

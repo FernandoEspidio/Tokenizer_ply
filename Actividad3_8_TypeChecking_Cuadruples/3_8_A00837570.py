@@ -1,9 +1,10 @@
-# Fernando Espidio Santamaria
+# Fernando Espidio Santamaria - A00837570
+# Luis Santiago Sauma Peñaloza - A00836418
+
 # Actividad 3.8 - Type checking y quadruples
 
 import ply.lex as lex
 import ply.yacc as yacc
-
 
 # Estructuras implementadas
 errores = [] # lista de mensajes de error de lexico, sintaxis o semantica

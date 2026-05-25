@@ -1,4 +1,4 @@
-program caso_errores_lexico_sintaxis_extenso;
+program caso_errores_lexico_sintaxis;
 
 var
     A, B : int ;
